@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Survey Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Library Survey</h1>
+        <p>Help us improve your local library!</p>
+      </header>
+
+      <div class="main-container">
+        <form class="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="8"
+              max="100"
+              class="form-control"
+              placeholder="Enter your ge"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <p>How often do you visit the library?</p>
+
+            <select name="role" id="dropdown" class="form-control" required>
+              <option disabled selected value>Select</option>
+              <option value="daily">Daily</option>
+              <option value="week-several">Several times a week</option>
+              <option value="week-once">Once a week</option>
+              <option value="month-several">Several times a month</option>
+              <option value="month-once">Once a month</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>
+              When you visit, how frequent are you able to find what you are
+              looking for?
+            </p>
+
+            <label>
+              <input
+                type="radio"
+                name="accessibility"
+                value="always"
+                class="input-radio"
+                checked
+              />Always
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="accessibility"
+                value="sometimes"
+                class="input-radio"
+                checked
+              />Sometimes
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="accessibility"
+                value="rarely"
+                class="input-radio"
+                checked
+              />Rarely
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="accessibility"
+                value="never"
+                class="input-radio"
+                checked
+              />Never
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>
+              Please check all that apply to the reasons you visit the library:
+            </p>
+
+            <label>
+              <input
+                type="checkbox"
+                name="reasons"
+                value="check/return"
+                class="input-checkbox"
+              />To check out and/or return books
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="reasons"
+                value="computer"
+                class="input-checkbox"
+              />To use the computers
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="reasons"
+                value="book-recs"
+                class="input-checkbox"
+              />To get a book recommendation
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="reasons"
+                value="research/info"
+                class="input-checkbox"
+              />To do research and/or find information
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="reasons"
+                value="class"
+                class="input-checkbox"
+              />To take a class
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>Any suggestions or feedback on how we can improve?</p>
+
+            <textarea
+              name="comment"
+              id="comments"
+              placeholder="Write your thoughts here"
+              class="input-textarea"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
